@@ -55,16 +55,16 @@ const BLOCK_SHAPES = {
     [[0, 1], [0, 1], [0, 1], [1, 1]],          // 대형 J
     [[1, 1, 1], [1, 0, 0], [1, 0, 0]],         // 코너 L
     [[1, 1, 1], [0, 0, 1], [0, 0, 1]],         // 코너 J
-    [[1, 0, 1], [1, 0, 1], [1, 1, 1]],         // 대형 U
+             // 대형 U
     [[1, 1, 1, 1, 1], [0, 0, 1, 0, 0]],        // 대형 T (가로)
     [[0, 1, 0], [0, 1, 0], [1, 1, 1], [0, 1, 0]], // 대형 T (세로)
     [[1, 0, 0], [1, 1, 0], [0, 1, 1], [0, 0, 1]], // 대각 계단
   ],
 };
 
-const BLOCK_COLORS = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "cyan"];
+const BLOCK_COLORS = ["blue"];
 
-/** 블록 블래스트 난이도 선택 화면 렌더링 */
+/**  블록 블래스트 난이도 선택 화면 렌더링 */
 function renderBlockblastDifficultySelect() {
   blockblastDifficultyOptionsEl.innerHTML = BLOCKBLAST_DIFFICULTIES.map((diff) => {
     const recordLine = getRecordMetaLine("blockblast", diff.key, null);
